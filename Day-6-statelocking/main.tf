@@ -28,3 +28,16 @@ resource "aws_subnet" "apple" {
         Name = "sd-subnet"
     }
 }
+
+resource "aws_instance" "dev" {
+    ami = "ami-02dfbd4ff395f2a1b"
+    instance_type = "t2.medium"
+    tags = {
+        Name = "dev-instance"
+    }
+}
+
+
+
+  
+
