@@ -20,3 +20,11 @@ resource "aws_subnet" "sample" {
         Name = "sd-subnet"
     }
 }
+
+resource "aws_subnet" "apple" {
+    vpc_id = aws_vpc.name.id
+    cidr_block = "10.0.1.0/24"
+    tags = {
+        Name = "sd-subnet"
+    }
+}

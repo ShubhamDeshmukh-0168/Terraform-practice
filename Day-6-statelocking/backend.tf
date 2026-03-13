@@ -3,5 +3,7 @@ terraform {
     bucket = "deshmukh-23-test"
     key = "sd-terraform/terraform.tfstate"
     region = "us-east-1"
+    state_locking = true
+  
     }
     }
