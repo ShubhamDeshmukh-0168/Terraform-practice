@@ -9,7 +9,7 @@ resource "aws_vpc" "demo_vpc" {
 
 # Subnet (Implicit Dependency)
 resource "aws_subnet" "demo_subnet" {
-  vpc_id     = aws_vpc.demo_vpc.id   # 👈 reference
+  vpc_id     = aws_vpc.demo_vpc.id   # reference
   cidr_block = "10.0.1.0/24"
 
   tags = {
