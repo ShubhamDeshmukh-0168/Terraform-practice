@@ -43,7 +43,9 @@ resource "aws_db_instance" "main" {
   engine_version          = "8.0"
   instance_class          = "db.t3.micro"
   username                = "admin"
+
   #manage_master_user_password = true # password will be generated and stored in Secrets Manager
+  #MySQL + Secrets Manager + Read Replica → NOT supported
   password = "shubham!134" #self-managed password 
   db_subnet_group_name    = aws_db_subnet_group.subnet.name
 
