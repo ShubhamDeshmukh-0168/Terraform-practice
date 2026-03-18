@@ -45,7 +45,7 @@ resource "aws_db_instance" "main" {
   username                = "admin"
 
   #manage_master_user_password = true # password will be generated and stored in Secrets Manager
-  #MySQL + Secrets Manager + Read Replica → NOT supported
+  #MySQL + Secrets Manager + Read Replica → NOT supported we can manually integrate Secrets Manager and still use replicas.
   password = "shubham!134" #self-managed password 
   db_subnet_group_name    = aws_db_subnet_group.subnet.name
 
