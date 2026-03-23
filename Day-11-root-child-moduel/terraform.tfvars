@@ -1,0 +1,6 @@
+ami_id="ami-02dfbd4ff395f2a1b"
+instance_type="t2.micro"
+db_name = "mydb"
+db_user = "admin"  
+db_password = "Admin12345"
+instance_class = "db.t3.micro"
