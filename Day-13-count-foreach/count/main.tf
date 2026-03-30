@@ -43,3 +43,7 @@ resource "aws_instance" "name" {
        
 }
 }
+
+#Behavior	        for_each	           count
+#Identification	  "dev", "test"	          0, 1, 2
+#Remove "test"	  Only test deleted 	prod gets recreated ❌
